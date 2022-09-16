@@ -63,3 +63,14 @@ a {
     font-size: 1.8em;
 }
 
+.content-container {
+    display: grid;
+    grid-template-rows: 1fr 4.5fr;
+}
+
+.navbar {
+}
+
+.main {
+    background-color: rgb(226,232,240);
+}
