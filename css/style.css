@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100%;
+}
+
+.sidebar {
+    background-color: rgb(25,146,212);
+    color: white;
+    text-align: center;
+}
+
+.logo > p {
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
