@@ -23,7 +23,7 @@ a {
 
 .dashboard-items {
     display: flex;
-    height: 60%;
+    height: 420px;
     flex-direction: column;
     align-items: flex-start;
     row-gap: 24px;
