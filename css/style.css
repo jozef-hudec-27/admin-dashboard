@@ -248,6 +248,42 @@ a {
     margin-top: 4px;
 }
 
-.announcement:hover {
+.announcement:hover, .trending-profile:hover {
     background-color: rgb(247, 247, 247);
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.trending img {
+    width: 48px;
+}
+
+.trending-profile {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    border-radius: 16px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.trending-profile p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.trending-profile > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.trending-profile > div > p:last-of-type {
+    color: grey;
+    font-size: 0.8em;
 }
