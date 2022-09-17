@@ -65,12 +65,53 @@ a {
 
 .content-container {
     display: grid;
-    grid-template-rows: 1fr 4.5fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .navbar {
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-top: 8px;
 }
 
+.navbar > div > img:not(:last-of-type) {
+    width: 24px;
+}
+
+.first-row-container {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    padding: 0 32px;
+    font-weight: 600;
+}
+
+.first-row-container > img {
+    cursor: pointer;
+}
+
+.first-row-container > img:last-of-type {
+    width: 48px;
+    border-radius: 50%;
+}
+
+.first-row-container > input {
+    appearance: none;
+    width: 50%;
+    height: 32px;
+    border-radius: 24px;
+    border: none;
+    background-color: rgb(226,232,240);
+}
+
+.first-row-container > a {
+    border: 2px solid red;
+}
+
+.notification-btn {
+    margin-left: auto;
+}
 .main {
     background-color: rgb(226,232,240);
+    padding-top: 12px;
 }
