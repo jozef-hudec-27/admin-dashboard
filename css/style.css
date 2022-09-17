@@ -164,5 +164,34 @@ a {
 
 .main {
     background-color: rgb(226,232,240);
-    padding-top: 12px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.project {
+    height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.side-cards {
+    margin-left: 24px; 
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.side-cards > div {
+    background-color: white;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
