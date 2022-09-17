@@ -7,7 +7,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     height: 100%;
 }
 
@@ -176,10 +176,24 @@ a {
 }
 
 .project {
+    box-sizing: border-box;
     height: 200px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-left: 7px solid orange;
+    padding: 16px;
+}
+
+.project > p:first-of-type {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+
+.project > p:last-of-type {
+    margin-top: 0;
+    color: grey;
 }
 
 .side-cards {
