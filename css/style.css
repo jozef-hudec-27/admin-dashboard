@@ -216,7 +216,7 @@ a {
     row-gap: 24px;
 }
 
-.side-cards > div { 
+.announcements, .trending { 
     background-color: white;
     border-radius: 8px;
     flex: 1;
@@ -286,4 +286,17 @@ a {
 .trending-profile > div > p:last-of-type {
     color: grey;
     font-size: 0.8em;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    height: 100%;
+}
+
+.section-heading {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.1em;
 }
