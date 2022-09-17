@@ -176,13 +176,13 @@ a {
 }
 
 .project {
-    box-sizing: border-box;
     height: 200px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     border-left: 7px solid orange;
     padding: 16px;
+    position: relative;
 }
 
 .project > p:first-of-type {
@@ -196,6 +196,19 @@ a {
     color: grey;
 }
 
+.project-functions {
+    position: absolute;
+    right: 16px;
+    bottom: 12px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.project-functions > img {
+    width: 20px;
+    cursor: pointer;
+}
+
 .side-cards {
     margin-left: 24px; 
     display: flex;
@@ -203,9 +216,10 @@ a {
     row-gap: 24px;
 }
 
-.side-cards > div {
+.side-cards > div { 
     background-color: white;
     border-radius: 8px;
     flex: 1;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 16px;
 }
